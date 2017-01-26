@@ -1,11 +1,9 @@
 import socket
 
-UDP_IP = "140.252.33.33"
+UDP_IP = "140.252.32.237"
 UDP_PORT = 54321
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.settimeout(100)
-
-MESSAGE = "ADDR,3,0;"
 
 def write(msg):
     sock.sendto(msg, (UDP_IP, UDP_PORT))
@@ -17,7 +15,7 @@ def write(msg):
 
 write("ADDR,2,1;")
 write("FUNC,3,1;")
-write("GLOBAL,3,3,4,5;")
+write("GLOBAL,3,255;")
 write("SEND_FIFO;")
             
 #write("SEND_ADDR,1;")
