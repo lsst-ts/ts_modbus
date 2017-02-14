@@ -1,6 +1,6 @@
 import socket
 
-UDP_IP = "140.252.32.237"
+UDP_IP = "140.252.33.37"
 UDP_PORT = 54321
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.settimeout(100)
